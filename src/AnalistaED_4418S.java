@@ -9,7 +9,7 @@ public class AnalistaED_4418S {
 
     static final double FACTOR_HORA_EXTRA = 1.2;
     private String nombreCompleto, dni;
-    private double salarioBasePorHora = 10.56;
+    private double salarioBasePorHora = 12.56;
 
     /**
      * Constructor con dos parámetros
@@ -29,8 +29,7 @@ public class AnalistaED_4418S {
      */
     public double getSalarioEsteMes(int horasExtra) {
         double cantidadExtra, salarioFinal;
-        cantidadExtra = horasExtra * this.salarioBasePorHora
-                * FACTOR_HORA_EXTRA;
+        cantidadExtra = horasExtra * this.salarioBasePorHora * FACTOR_HORA_EXTRA;
         salarioFinal = this.salarioBasePorHora * 40 * 4 + cantidadExtra;
         salarioFinal = (double) Math.round(salarioFinal * 100d) / 100d;
         return salarioFinal;
