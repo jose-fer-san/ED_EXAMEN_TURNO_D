@@ -7,7 +7,7 @@ import java.util.*;
 
 public class AnalistaED_4418S {
 
-    static final double FACTOR_HORA_EXTRA = 1.2;
+    static final double FACTOR_HORA_EXTRA = 1.3;
     private String nombreCompleto, dni;
     private double salarioBasePorHora = 12.56;
 
